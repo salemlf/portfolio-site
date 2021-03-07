@@ -17,6 +17,34 @@
     color: $mediumPurpleishBlue;
   }
 
+  //transforming hamburger menu
+  &.open {
+    .header__menu {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  //hamburger
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 7rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient($darkestBlue, transparent);
+  }
+
   //menu for mobile
   &__menu {
     > span {
@@ -24,10 +52,12 @@
       width: 26px;
       height: 2px;
       background-color: $white;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
 
       //add margin-bottom to all except last span
       &:not(:last-child) {
-        margin-bottom: 3px;
+        margin-bottom: 5px;
       }
     }
   }
