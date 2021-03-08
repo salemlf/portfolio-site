@@ -52,6 +52,11 @@ body .flex-ai-c {
           align-items: center;
 }
 
+.active body {
+  -webkit-transform: translateX(-220px);
+  transform: translateX(-220px);
+}
+
 button,
 .button {
   padding: 0.875rem 2.1875rem;
@@ -82,7 +87,7 @@ button:hover,
   }
 }
 
-.header nav {
+.header nav.desktop-version, .header nav.hamburger {
   padding: 1.0625rem 1.5rem;
   background-color: #0c0032;
 }
@@ -111,22 +116,13 @@ button:hover,
           transform: rotate(-45deg);
 }
 
-.header .overlay {
-  display: none;
-  position: fixed;
-  top: 7rem;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0c0032), to(transparent));
-  background: linear-gradient(#0c0032, transparent);
-}
-
 .header__menu > span {
   display: block;
+  position: relative;
   width: 26px;
   height: 2px;
   background-color: white;
+  z-index: 2;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   -webkit-transform-origin: 3px 1px;
@@ -135,6 +131,67 @@ button:hover,
 
 .header__menu > span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header__mobile-menu {
+  background-color: #240090;
+  color: white;
+  bottom: 0;
+  max-width: 320px;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 100%;
+  padding: 1.0625rem 0rem;
+  text-align: center;
+  z-index: 1;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.header__mobile-menu.active {
+  -webkit-transform: translateX(-320px);
+  transform: translateX(-320px);
+}
+
+.header__mobile-menu > ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 120.25px;
+  list-style-type: none;
+}
+
+.header__mobile-menu > ul > li {
+  padding: 0;
+  margin: 0 0;
+  font-size: 1.125rem;
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-transform: uppercase;
+  opacity: 0.8;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+
+.header__mobile-menu > ul > li:first-child {
+  border-top: 1px solid white;
+}
+
+.header__mobile-menu > ul > li > a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1.5em 0 1.5em;
+}
+
+.header__mobile-menu > ul > li:first-child {
+  margin-top: 4.375rem;
+}
+
+.header__mobile-menu > ul > li:hover, .header__mobile-menu > ul > li:focus {
+  background: #190061;
+  opacity: 1;
 }
 
 .header__links a {

@@ -45,7 +45,20 @@ body {
       align-items: center;
     }
   }
+
+  //added for mobile menu
+  .active & {
+    -moz-transform: translateX(-220px);
+    -ms-transform: translateX(-220px);
+    -webkit-transform: translateX(-220px);
+    transform: translateX(-220px);
+  }
 }
+
+//page other than header and footer
+.container {
+}
+
 //buttons
 button,
 .button {

@@ -1,7 +1,10 @@
 .header {
   nav {
-    padding: 1.0625rem 1.5rem;
-    background-color: $darkestBlue;
+    &.desktop-version,
+    &.hamburger {
+      padding: 1.0625rem 1.5rem;
+      background-color: $darkestBlue;
+    }
   }
 
   &__logo {
@@ -34,24 +37,15 @@
     }
   }
 
-  //hamburger
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 7rem;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background: linear-gradient($darkestBlue, transparent);
-  }
-
-  //menu for mobile
+  //hamburger button for mobile
   &__menu {
     > span {
       display: block;
+      position: relative;
       width: 26px;
       height: 2px;
       background-color: $white;
+      z-index: 2;
       transition: all 300ms ease-in-out;
       transform-origin: 3px 1px;
 
@@ -61,6 +55,75 @@
       }
     }
   }
+
+  //for displaying mobile menu links
+  &__mobile-menu {
+    background-color: $mediumPurpleishBlue;
+    color: $white;
+    bottom: 0;
+    max-width: 320px;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 100%;
+    padding: 1.0625rem 0rem;
+    text-align: center;
+    z-index: 1;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+    //when hamburger button is clicked
+    &.active {
+      -moz-transform: translateX(-320px);
+      -ms-transform: translateX(-320px);
+      -webkit-transform: translateX(-320px);
+      transform: translateX(-320px);
+    }
+
+    > ul {
+      margin: 0;
+      padding: 0;
+      padding-top: 120.25px;
+      list-style-type: none;
+
+      > li {
+        //TODO: Make font size larger?
+        padding: 0;
+        margin: 0 0;
+        font-size: $font-med;
+        border-bottom: 1px solid $white;
+        width: 100%;
+        text-transform: uppercase;
+        opacity: 0.8;
+        transition: opacity 400ms ease-in-out;
+
+        &:first-child {
+          border-top: 1px solid $white;
+        }
+
+        > a {
+          color: $white;
+          text-decoration: none;
+          display: block;
+          padding: 1.5em 0 1.5em;
+        }
+
+        &:first-child {
+          margin-top: 4.375rem;
+        }
+
+        &:hover,
+        &:focus {
+          background: $darkBlue;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   &__links {
     a {
       position: relative;

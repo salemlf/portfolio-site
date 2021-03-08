@@ -38,21 +38,24 @@
   </head>
   <body>
     <header class="header">
-      <div class="overlay"></div>
-      <nav class="flex flex-jc-sb flex-ai-c">
+      <nav class="desktop-version flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo">
           <!-- logo here, temporarily just text -->
           <!-- <img src="images/logo.svg" alt="Salem's Portfolio Page Logo" /> -->
           <h2 class="header__name-logo">SLF</h2>
         </a>
         <!-- hamburger menu -->
-        <a href="#" id="hamburgerBtn" class="header__menu hide-for-desktop">
+        <a
+          href="#"
+          id="hamburgerBtn"
+          class="hamburger header__menu hide-for-desktop"
+        >
           <span></span>
           <span></span>
           <span></span>
         </a>
         <div class="header__links hide-for-mobile">
-          <a href="#">Home</a>
+          <a href="/">Home</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
           <a href="#">Tutorials</a>
@@ -60,15 +63,28 @@
         </div>
         <a class="button header__cta hide-for-mobile">Light/Dark Mode</a>
       </nav>
+      <!-- for mobile -->
+      <!-- TODO: reuse menu above to avoid repetition? -->
+      <nav id="mobile-menu" class="header__mobile-menu">
+        <!-- TODO: connect close button -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Hobbies</a></li>
+        </ul>
+      </nav>
     </header>
-
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est
-    laborum."
+    <section class="container">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum."
+    </section>
     <script src="app/js/script.js"></script>
   </body>
 </html>
