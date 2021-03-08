@@ -1,0 +1,57 @@
+.about {
+  //temporary border for identifying sections
+  border: 1px solid white;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  .primary-div {
+    width: 45%;
+    height: 500px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: -400px 25px 25px 200px;
+    align-items: left;
+    background-color: $darkBlue;
+  }
+
+  .secondary-div {
+    width: 55%;
+    min-height: 600px;
+    border-radius: 3px;
+    display: flex;
+    //TODO: aligns text as center, probably change
+    //TODO: move headers left in container
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin: 400px 25px 25px -400px;
+    background-color: $mediumPurpleishBlue;
+    color: $white;
+
+    ul {
+      margin: 10px 0;
+      line-height: 40px;
+    }
+
+    h3 {
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width: 1120px) {
+    .primary-div {
+      width: 95%;
+      margin: -400px 10px 10px 30px;
+    }
+
+    .secondary-div {
+      width: 80%;
+      margin: 400px 10px 10px -60px;
+    }
+  }
+}

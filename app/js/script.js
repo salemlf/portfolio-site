@@ -13,3 +13,8 @@ hamburgerBtn.addEventListener("click", function () {
     slideInMenu.classList.add("active");
   }
 });
+
+//TODO: add scroll transition
+function scrollHome() {
+  window.scrollTo(0, 0);
+}

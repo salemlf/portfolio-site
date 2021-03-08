@@ -58,7 +58,7 @@
 
   //for displaying mobile menu links
   &__mobile-menu {
-    background-color: $mediumPurpleishBlue;
+    background-color: $lightPurpleishBlue;
     color: $white;
     bottom: 0;
     max-width: 320px;
@@ -109,6 +109,11 @@
           text-decoration: none;
           display: block;
           padding: 1.5em 0 1.5em;
+
+          &:hover,
+          &:focus {
+            color: $orangeYellow;
+          }
         }
 
         &:first-child {

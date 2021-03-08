@@ -55,36 +55,91 @@
           <span></span>
         </a>
         <div class="header__links hide-for-mobile">
-          <a href="/">Home</a>
+          <a href="javascript:scrollHome()">Home</a>
           <a href="#">About</a>
-          <a href="#">Contact</a>
           <a href="#">Tutorials</a>
           <a href="#">Hobbies</a>
+          <a href="#">Contact</a>
         </div>
         <a class="button header__cta hide-for-mobile">Light/Dark Mode</a>
       </nav>
       <!-- for mobile -->
       <!-- TODO: reuse menu above to avoid repetition? -->
-      <nav id="mobile-menu" class="header__mobile-menu">
+      <nav id="mobile-menu" class="header__mobile-menu hide-for-desktop">
         <!-- TODO: connect close button -->
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="javascript:scrollHome()">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
           <li><a href="#">Tutorials</a></li>
           <li><a href="#">Hobbies</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section class="container">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum."
-    </section>
+    <div class="container flex flex-jc-c flex-ai-c flex-wrap flex-fd-row">
+      <section class="about">
+        <div class="primary-div">
+          <h2>About Me</h2>
+          <!-- Add photo of me in this section -->
+          <p>Here's an about me section placeholder</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="secondary-div">
+          <h3>Skills</h3>
+          <ul>
+            <li>Javascript</li>
+            <li>HTML & CSS</li>
+            <li>SASS/SCSS</li>
+          </ul>
+          <h3>Work History</h3>
+          <ul>
+            <li>Incyte</li>
+            <li>Moving Mountains</li>
+            <li>Eastern Washington University</li>
+          </ul>
+        </div>
+      </section>
+      <section class="projects">
+        <!-- TODO: this section will be a grid-like structure -->
+        <div class="primary-div">
+          <h2>Projects and Tutorials</h2>
+        </div>
+        <div class="secondary-div">
+          <h3>Markdown editor</h3>
+          <p>Placeholder text</p>
+        </div>
+        <div class="secondary-div">
+          <h3>Random quote generator</h3>
+          <p>Placeholder text</p>
+        </div>
+      </section>
+      <section class="hobbies">
+        <div class="primary-div">
+          <h2>Hobbies</h2>
+          <ul>
+            <li>Cooking</li>
+            <li>Reading</li>
+            <li>[Other hobby here]</li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="primary-div">
+          <h2>Contact Me</h2>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <!-- Icon and image attribution
+      brightness by Ravindra Kalkani from the Noun Project
+      Moon by Royyan Wijaya from the Noun Project
+      -->
+    </footer>
     <script src="app/js/script.js"></script>
   </body>
 </html>
