@@ -20,8 +20,8 @@ body {
   //equivalent to 18px
   font-size: $font-med;
   font-weight: 300;
-  color: $greyishBlue;
-  background-color: $darkGrey;
+  // color: $greyishBlue;
+  background-color: $deepDarkBlue;
 
   a,
   a:visited,
@@ -67,15 +67,34 @@ body {
   }
 
   h2 {
-    color: $lightPurpleishBlue;
+    color: $pink;
+    align-self: flex-start;
+    margin-left: 20px;
+    font-size: 40px;
   }
 
   h3 {
-    color: $orangeYellow;
+    color: $yellow;
+    font-size: 32px;
   }
 
   p {
-    color: $white;
+    color: $offWhite;
+  }
+
+  li {
+    color: $offWhite;
+  }
+
+  hr {
+    width: 50%;
+    border: 1px solid $yellow;
+    align-self: flex-end;
+  }
+
+  .break {
+    flex-basis: 100%;
+    height: 0;
   }
 }
 
@@ -104,12 +123,8 @@ body {
 button,
 .button {
   padding: 0.875rem 2.1875rem;
-  background: linear-gradient(
-    to right,
-    $lightPurpleishBlue,
-    $mediumPurpleishBlue
-  );
-  border-radius: 50px;
+  background: $tannish;
+  border-radius: 20px;
   border: 0;
   color: white;
   font-weight: 400;
@@ -118,11 +133,7 @@ button,
   //TODO: add color transition
 
   &:hover {
-    background: linear-gradient(
-      to right,
-      $lightPurpleishBlueHover,
-      $mediumPurpleishBlueHover
-    );
+    opacity: 0.75;
   }
 }
 

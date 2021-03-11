@@ -14,32 +14,32 @@
     border-radius: 15px;
     padding: 10px 20px;
     margin: -400px 25px 25px 200px;
-    align-items: left;
-    background-color: $darkBlue;
+    background-color: $yellow;
+    color: $offWhite;
+
+    h3 {
+      color: $offWhite;
+    }
   }
 
   .secondary-div {
     width: 55%;
-    min-height: 600px;
+    min-height: 550px;
     border-radius: 3px;
     display: flex;
     //TODO: aligns text as center, probably change
     //TODO: move headers left in container
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 30px;
     margin: 400px 25px 25px -400px;
-    background-color: $mediumPurpleishBlue;
-    color: $white;
+    background-color: $pink;
+    color: $offWhite;
 
     ul {
       margin: 10px 0;
       line-height: 40px;
-    }
-
-    h3 {
-      display: inline-block;
     }
   }
 

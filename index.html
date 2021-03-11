@@ -57,11 +57,14 @@
         <div class="header__links hide-for-mobile">
           <a href="javascript:scrollHome()">Home</a>
           <a href="#">About</a>
-          <a href="#">Tutorials</a>
+          <a href="#">Projects</a>
           <a href="#">Hobbies</a>
           <a href="#">Contact</a>
         </div>
-        <a class="button header__cta hide-for-mobile">Light/Dark Mode</a>
+        <a class="light-mode-btn button header__cta hide-for-mobile"
+          ><img src="./app/images/Sun.svg" alt="Sun icon for light mode"
+        /></a>
+        <a class="resume-btn button header__cta hide-for-mobile">Resume</a>
       </nav>
       <!-- for mobile -->
       <!-- TODO: reuse menu above to avoid repetition? -->
@@ -70,17 +73,19 @@
         <ul>
           <li><a href="javascript:scrollHome()">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Projects</a></li>
           <li><a href="#">Hobbies</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div class="container flex flex-jc-c flex-ai-c flex-wrap flex-fd-row">
+    <div class="container flex flex-jc-sb flex-ai-c flex-wrap flex-fd-row">
+      <h2>About Me</h2>
+      <hr />
       <section class="about">
         <div class="primary-div">
-          <h2>About Me</h2>
           <!-- Add photo of me in this section -->
+          <h3>Bio</h3>
           <p>Here's an about me section placeholder</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -104,11 +109,12 @@
           </ul>
         </div>
       </section>
+      <div class="break"></div>
+      <h2>Projects and Tutorials</h2>
+      <hr />
       <section class="projects">
         <!-- TODO: this section will be a grid-like structure -->
-        <div class="primary-div">
-          <h2>Projects and Tutorials</h2>
-        </div>
+        <div class="primary-div"></div>
         <div class="secondary-div">
           <h3>Markdown editor</h3>
           <p>Placeholder text</p>
@@ -118,9 +124,11 @@
           <p>Placeholder text</p>
         </div>
       </section>
+      <div class="break"></div>
+      <h2>Hobbies</h2>
+      <hr />
       <section class="hobbies">
         <div class="primary-div">
-          <h2>Hobbies</h2>
           <ul>
             <li>Cooking</li>
             <li>Reading</li>
@@ -128,10 +136,11 @@
           </ul>
         </div>
       </section>
+      <div class="break"></div>
+      <h2>Contact Me</h2>
+      <hr />
       <section class="contact">
-        <div class="primary-div">
-          <h2>Contact Me</h2>
-        </div>
+        <div class="primary-div"></div>
       </section>
     </div>
     <footer>
@@ -141,5 +150,16 @@
       -->
     </footer>
     <script src="app/js/script.js"></script>
+    <!-- Below is temporary, for testing -->
+    <script>
+      window.onUsersnapCXLoad = function (api) {
+        api.init();
+      };
+      var script = document.createElement("script");
+      script.defer = 1;
+      script.src =
+        "https://widget.usersnap.com/global/load/b1dae87c-1ab7-49c9-8dd3-72450ddbc487?onload=onUsersnapCXLoad";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    </script>
   </body>
 </html>
