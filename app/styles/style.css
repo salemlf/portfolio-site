@@ -187,6 +187,7 @@ button:hover,
   width: fit-content;
   padding: 0.2rem;
   background: #e3ce63;
+  border-radius: 10px;
 }
 
 .header .light-mode-btn img {
