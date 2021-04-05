@@ -5,15 +5,48 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  //TODO: change where flexbox classes are only used in index.html
   align-items: center;
   justify-items: center;
+
+  //TODO: change to position absolute for fixing where the vertical placement is?
+  .name-div {
+    //TODO: temporary fixes, change later
+    margin-top: -20%;
+    position: relative;
+    margin-bottom: 10%;
+    flex-basis: 100%;
+  }
+
+  .name-background {
+    width: 90%;
+  }
+
+  .person-div {
+    //TODO: temporary fixes, change later
+    // margin-top: -500px;
+    position: absolute;
+    flex-basis: 100%;
+    width: 100%;
+    top: 45%;
+  }
+
+  .main-heading {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
+  // .about-divs{
+
+  // }
 
   .primary-div {
     width: 45%;
     height: 500px;
     border-radius: 15px;
     padding: 10px 20px;
-    margin: -400px 25px 25px 200px;
+    //! Uncomment later if needed, trying to only use flexbox
+    //margin: -400px 25px 25px 200px;
     background-color: $yellow;
     color: $offWhite;
 
@@ -22,6 +55,7 @@
     }
   }
 
+  //TODO: make this one relative to to primary div
   .secondary-div {
     width: 55%;
     min-height: 550px;
@@ -46,12 +80,16 @@
   @media only screen and (max-width: 1120px) {
     .primary-div {
       width: 95%;
-      margin: -400px 10px 10px 30px;
+      //! Uncomment later if needed, trying to only use flexbox
+      // margin: -400px 10px 10px 30px;
+      margin: auto;
     }
 
     .secondary-div {
       width: 80%;
-      margin: 400px 10px 10px -60px;
+      //! Uncomment later if needed, trying to only use flexbox
+      // margin: 400px 10px 10px -60px;
+      margin: auto;
     }
   }
 }

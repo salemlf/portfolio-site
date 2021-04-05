@@ -109,6 +109,11 @@ body .break {
   height: 0;
 }
 
+body .whole-row {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 .container {
   min-height: 100vh;
   width: 100%;
@@ -122,7 +127,7 @@ body .break {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px 0px;
+  margin: 10px 0px;
 }
 
 .container h2 {
@@ -349,12 +354,37 @@ button:hover,
   justify-items: center;
 }
 
+.about .name-div {
+  margin-top: -20%;
+  position: relative;
+  margin-bottom: 10%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.about .name-background {
+  width: 90%;
+}
+
+.about .person-div {
+  position: absolute;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  top: 45%;
+}
+
+.about .main-heading {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 40px;
+}
+
 .about .primary-div {
   width: 45%;
   height: 500px;
   border-radius: 15px;
   padding: 10px 20px;
-  margin: -400px 25px 25px 200px;
   background-color: #e3ce63;
   color: #f7eede;
 }
@@ -394,11 +424,11 @@ button:hover,
 @media only screen and (max-width: 1120px) {
   .about .primary-div {
     width: 95%;
-    margin: -400px 10px 10px 30px;
+    margin: auto;
   }
   .about .secondary-div {
     width: 80%;
-    margin: 400px 10px 10px -60px;
+    margin: auto;
   }
 }
 

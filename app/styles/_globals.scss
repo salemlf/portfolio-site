@@ -1,3 +1,5 @@
+//TODO: change default font-size in html tag for different font-sizes, fluid typography
+// actually may be bad practice (because can override user's default font-size)? Research later
 html {
   //let's user control font-size in browser, more accessible
   font-size: 100%;
@@ -92,9 +94,14 @@ body {
     align-self: flex-end;
   }
 
+  //TODO: delete?
   .break {
     flex-basis: 100%;
     height: 0;
+  }
+
+  .whole-row {
+    flex-basis: 100%;
   }
 }
 
@@ -106,7 +113,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 0px;
+  margin: 10px 0px;
 
   h2 {
     text-transform: uppercase;
