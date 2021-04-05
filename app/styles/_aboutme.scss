@@ -41,7 +41,7 @@
   // }
 
   .primary-div {
-    width: 45%;
+    width: 35%;
     height: 500px;
     border-radius: 15px;
     padding: 10px 20px;
@@ -55,9 +55,19 @@
     }
   }
 
+  .photo-div {
+    //TODO: temporary, change later
+    margin-top: -475px;
+    width: 60%;
+  }
+
+  .photo-background {
+    width: 90%;
+  }
+
   //TODO: make this one relative to to primary div
   .secondary-div {
-    width: 55%;
+    width: 35%;
     min-height: 550px;
     border-radius: 3px;
     display: flex;
@@ -67,7 +77,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 30px;
-    margin: 400px 25px 25px -400px;
+    margin: 450px 25px 25px -400px;
     background-color: $pink;
     color: $offWhite;
 
@@ -79,14 +89,14 @@
 
   @media only screen and (max-width: 1120px) {
     .primary-div {
-      width: 95%;
+      width: 45%;
       //! Uncomment later if needed, trying to only use flexbox
       // margin: -400px 10px 10px 30px;
       margin: auto;
     }
 
     .secondary-div {
-      width: 80%;
+      width: 65%;
       //! Uncomment later if needed, trying to only use flexbox
       // margin: 400px 10px 10px -60px;
       margin: auto;

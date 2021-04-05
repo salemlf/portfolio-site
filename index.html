@@ -59,11 +59,19 @@
       <!-- TODO: reuse menu above to avoid repetition? -->
       <nav id="mobile-menu" class="header__mobile-menu hide-for-desktop">
         <!-- TODO: connect close button -->
+        <span></span>
         <ul>
-          <li><a href="javascript:scrollHome()">Home</a></li>
+          <li>
+            <span class="selection"></span
+            ><a href="javascript:scrollHome()">Home</a>
+          </li>
+          <span class="selection"></span>
           <li><a href="#">About</a></li>
+          <span class="selection"></span>
           <li><a href="#">Projects</a></li>
+          <span class="selection"></span>
           <li><a href="#">Hobbies</a></li>
+          <span class="selection"></span>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -94,7 +102,7 @@
           <h2>About Me</h2>
           <hr />
         </div>
-        <div class="about-divs flex flex-jc-c">
+        <div class="about-divs flex flex-jc-c flex-wrap">
           <div class="primary-div">
             <!-- Add photo of me in this section -->
             <h3>Bio</h3>
@@ -105,6 +113,17 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
+          </div>
+          <div class="photo-div flex">
+            <!-- image will go here -->
+            <object
+              type="image/svg+xml"
+              data="./app/images/photo-background.svg"
+              class="photo-background"
+            >
+              3D div
+              <!-- fallback image in CSS -->
+            </object>
           </div>
           <div class="secondary-div">
             <h3>Skills</h3>
