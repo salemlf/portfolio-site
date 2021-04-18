@@ -282,6 +282,31 @@ button:hover,
 
 .header__mobile-menu .btn-dark-light-mode {
   background-color: #e3ce63;
+  border-radius: 5px;
+  padding: 0.25rem;
+  margin: 0 15% 0 7%;
+  -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header__mobile-menu .btn-dark-light-mode .sun-icon {
+  width: 7vw;
+}
+
+.header__mobile-menu .btn-dark-light-mode:hover {
+  opacity: initial;
+}
+
+.header__mobile-menu .btn-mobile-resume {
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  -webkit-box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
+}
+
+.header__mobile-menu .btn-mobile-resume:hover {
+  opacity: initial;
 }
 
 .header__mobile-menu .hr-span {
