@@ -236,6 +236,9 @@ button:hover,
   color: #f7eede;
   bottom: 10%;
   max-width: 75vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow: auto;
   position: fixed;
   top: 0;
@@ -250,7 +253,7 @@ button:hover,
 
 .header__mobile-menu .bg-svg-container {
   width: 100%;
-  height: 16vh;
+  height: 11vh;
 }
 
 .header__mobile-menu .bg-svg {
@@ -275,7 +278,7 @@ button:hover,
       -ms-flex-align: center;
           align-items: center;
   height: 10vh;
-  margin: 10vh 35vw 0vh 10vw;
+  margin: 8vh 35vw 0vh 10vw;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -298,9 +301,8 @@ button:hover,
 }
 
 .header__mobile-menu .btn-mobile-resume {
-  text-transform: uppercase;
   border-radius: 5px;
-  font-size: 1.125rem;
+  font-size: 3vw;
   -webkit-box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
           box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
 }
@@ -335,6 +337,22 @@ button:hover,
   height: 70vh;
 }
 
+.header__mobile-menu .nav-options .scaling-svg-container {
+  position: relative;
+  height: 100%;
+  width: 4vw;
+  padding: 0;
+  padding-bottom: 100%;
+}
+
+.header__mobile-menu .nav-options .scaling-svg-container .scaling-svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 .header__mobile-menu ul {
   width: 100%;
   margin: 0;
@@ -365,9 +383,9 @@ button:hover,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: 9vh;
+  height: 11vw;
   margin: 2vh 0;
-  padding: 1vh 0;
+  padding: 0 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -389,6 +407,11 @@ button:hover,
 .header__mobile-menu ul .row .mobile-icon {
   width: 50px;
   height: 50px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .header__mobile-menu ul .row .change-link {
@@ -396,6 +419,11 @@ button:hover,
   cursor: pointer;
   display: inline-block;
   margin-left: 8vw;
+  position: relative;
+  height: 0;
+  width: 8vw;
+  padding: 0;
+  padding-bottom: 100%;
 }
 
 .header__mobile-menu ul .row .change-link .mobile-icon-hover {
@@ -422,20 +450,23 @@ button:hover,
           flex-direction: column;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
+  margin-top: -2.5vw;
+  -ms-flex-item-align: auto;
+      align-self: auto;
 }
 
 .header__mobile-menu ul .selection {
   display: inline-block;
   width: 5px;
-  height: 9vh;
+  height: 11vw;
   z-index: 2;
-  margin: -1vh 0;
+  margin-bottom: 0;
 }
 
 .header__mobile-menu ul li {
   display: inline-block;
-  margin-left: 2vw;
-  font-size: 1.5rem;
+  margin-left: 1vw;
+  font-size: 4vw;
   font-weight: 700;
   letter-spacing: 8px;
   text-transform: uppercase;
