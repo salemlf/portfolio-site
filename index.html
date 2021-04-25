@@ -50,8 +50,8 @@
           <a href="#">Hobbies</a>
           <a href="#">Contact</a>
         </div>
-        <a class="light-mode-btn button header__cta hide-for-mobile"
-          ><img src="./app/images/Sun.svg" alt="Sun icon for light mode"
+        <a class="light-mode-btn button header__cta hide-for-mobile">
+          <img src="/app/images/sun.svg" alt="A sun icon for light mode"
         /></a>
         <a class="resume-btn button header__cta hide-for-mobile">Resume</a>
       </nav>
@@ -77,7 +77,7 @@
             <a href="javascript:scrollHome()">
               <div class="row">
                 <div class="col">
-                  <span class="selection"></span>
+                  <!-- <span class="selection"></span> -->
                 </div>
                 <div class="col">
                   <svg
@@ -242,7 +242,7 @@
             <a href="#">
               <div class="row">
                 <div class="col">
-                  <span class="selection"></span>
+                  <!-- <span class="selection"></span> -->
                 </div>
                 <div class="col">
                   <svg
@@ -321,7 +321,7 @@
             <a href="#">
               <div class="row">
                 <div class="col">
-                  <span class="selection"></span>
+                  <!-- <span class="selection"></span> -->
                 </div>
                 <div class="col">
                   <svg
@@ -540,7 +540,7 @@
             <a href="#">
               <div class="row">
                 <div class="col">
-                  <span class="selection"></span>
+                  <!-- <span class="selection"></span> -->
                 </div>
                 <div class="col">
                   <svg
@@ -1075,7 +1075,7 @@
             <a href="#">
               <div class="row">
                 <div class="col">
-                  <span class="selection"></span>
+                  <!-- <span class="selection"></span> -->
                 </div>
                 <div class="col">
                   <svg
@@ -1237,42 +1237,51 @@
           <h2>About Me</h2>
           <hr />
         </div>
-        <div class="about-divs flex flex-jc-c flex-wrap">
-          <div class="primary-div">
-            <!-- Add photo of me in this section -->
-            <h3>Bio</h3>
-            <p>Here's an about me section placeholder</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+        <div class="about-divs flex">
+          <div class="container-about-me">
+            <div class="left-about-me">
+              <div class="primary-div">
+                <!-- Add photo of me in this section -->
+                <h3>Bio</h3>
+                <p>Here's an about me section placeholder</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="right-about-me">
+              <img src="/app/images/photo-background.svg" alt="A purple photo frame" class="photo-frame">
+              <div class="photo-div">
+                <!-- <img src="/app/images/photo-background.svg" alt="A purple photo frame" class="photo-frame"> -->
+                  <!-- <object
+                    type="image/svg+xml"
+                    data="./app/images/photo-background.svg"
+                    class="photo-background"
+                  >
+                    Photo Frame
+                  </object> -->
+                </img>
+              </div>
+            </div>
           </div>
-          <div class="photo-div flex">
-            <!-- image will go here -->
-            <object
-              type="image/svg+xml"
-              data="./app/images/photo-background.svg"
-              class="photo-background"
-            >
-              3D div
-              <!-- fallback image in CSS -->
-            </object>
-          </div>
-          <div class="secondary-div">
-            <h3>Skills</h3>
-            <ul>
-              <li>Javascript</li>
-              <li>HTML & CSS</li>
-              <li>SASS/SCSS</li>
-            </ul>
-            <h3>Work History</h3>
-            <ul>
-              <li>Incyte</li>
-              <li>Moving Mountains</li>
-              <li>Eastern Washington University</li>
-            </ul>
+          <div class="container-skills">
+            <div class="secondary-div">
+              <h3>Skills</h3>
+              <ul>
+                <li>Javascript</li>
+                <li>HTML & CSS</li>
+                <li>SASS/SCSS</li>
+              </ul>
+              <h3>Work History</h3>
+              <ul>
+                <li>Incyte</li>
+                <li>Moving Mountains</li>
+                <li>Eastern Washington University</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

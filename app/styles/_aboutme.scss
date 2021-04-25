@@ -34,14 +34,60 @@
   .main-heading {
     flex-basis: 100%;
     margin-bottom: 40px;
+
+    hr {
+      float: left;
+    }
   }
 
-  // .about-divs{
+  .about-divs {
+    min-height: 60vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-  // }
+  .container-about-me {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 12%;
+    flex-basis: 100%;
+  }
+
+  .left-about-me {
+    width: 40%;
+    height: 600px;
+    // margin-top: -25%;
+  }
+
+  .right-about-me {
+    width: 70%;
+    min-height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: -30%;
+  }
+
+  .container-skills {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    margin-top: -20%;
+    margin-left: 15%;
+  }
 
   .primary-div {
-    width: 35%;
+    width: 100%;
     height: 500px;
     border-radius: 15px;
     padding: 10px 20px;
@@ -56,19 +102,22 @@
   }
 
   .photo-div {
-    //TODO: temporary, change later
-    margin-top: -475px;
-    width: 60%;
   }
 
-  .photo-background {
-    width: 90%;
+  .photo-frame {
   }
+
+  // .photo-background {
+  //   width: 100%;
+  // }
 
   //TODO: make this one relative to to primary div
   .secondary-div {
-    width: 35%;
-    min-height: 550px;
+    // width: 300px;
+    // min-height: 550px;
+    width: 70%;
+    min-height: 500px;
+    max-width: 400px;
     border-radius: 3px;
     display: flex;
     //TODO: aligns text as center, probably change
@@ -77,7 +126,6 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 30px;
-    margin: 450px 25px 25px -400px;
     background-color: $pink;
     color: $offWhite;
 
@@ -87,19 +135,19 @@
     }
   }
 
-  @media only screen and (max-width: 1120px) {
-    .primary-div {
-      width: 45%;
-      //! Uncomment later if needed, trying to only use flexbox
-      // margin: -400px 10px 10px 30px;
-      margin: auto;
-    }
+  // @media only screen and (max-width: 1120px) {
+  //   .primary-div {
+  //     width: 45%;
+  //     //! Uncomment later if needed, trying to only use flexbox
+  //     // margin: -400px 10px 10px 30px;
+  //     margin: auto;
+  //   }
 
-    .secondary-div {
-      width: 65%;
-      //! Uncomment later if needed, trying to only use flexbox
-      // margin: 400px 10px 10px -60px;
-      margin: auto;
-    }
-  }
+  //   .secondary-div {
+  //     width: 65%;
+  //     //! Uncomment later if needed, trying to only use flexbox
+  //     // margin: 400px 10px 10px -60px;
+  //     margin: auto;
+  //   }
+  // }
 }

@@ -27,6 +27,10 @@ body a:hover {
   text-decoration: none;
 }
 
+body a:hover {
+  cursor: pointer;
+}
+
 body .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,6 +188,47 @@ button:hover,
 .header__name-logo {
   font-family: "Rock Salt", cursive;
   color: #deab9e;
+}
+
+.header__links a {
+  position: relative;
+  font-size: 1.125rem;
+  color: #f7eede;
+  cursor: pointer;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__links a:hover, .header__links a:focus {
+  color: #f7eede;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.header__links a:hover::before, .header__links a:focus::before {
+  opacity: 1;
+}
+
+.header .desktop-version .resume-btn {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
 }
 
 .header .light-mode-btn {
@@ -370,6 +415,13 @@ button:hover,
 .header__mobile-menu ul a {
   color: #f7eede;
   text-decoration: none;
+  border-left: 5px solid #7b5b92;
+}
+
+.header__mobile-menu ul a:hover, .header__mobile-menu ul a:focus {
+  cursor: pointer;
+  background: rgba(162, 118, 193, 0.6);
+  border-left: 5px solid #deab9e;
 }
 
 .header__mobile-menu ul .row {
@@ -383,17 +435,12 @@ button:hover,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: 11vw;
+  height: clamp(16px, 11vw, 72px);
   margin: 2vh 0;
   padding: 0 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header__mobile-menu ul .row:hover, .header__mobile-menu ul .row:focus {
-  cursor: pointer;
-  background: rgba(162, 118, 193, 0.6);
 }
 
 .header__mobile-menu ul .row:hover li, .header__mobile-menu ul .row:focus li {
@@ -421,7 +468,7 @@ button:hover,
   margin-left: 8vw;
   position: relative;
   height: 0;
-  width: 8vw;
+  width: clamp(1.5rem, 8vw, 3rem);
   padding: 0;
   padding-bottom: 100%;
 }
@@ -458,7 +505,7 @@ button:hover,
 .header__mobile-menu ul .selection {
   display: inline-block;
   width: 5px;
-  height: 11vw;
+  height: clamp(16px, 11vw, 72px);
   z-index: 2;
   margin-bottom: 0;
 }
@@ -466,45 +513,12 @@ button:hover,
 .header__mobile-menu ul li {
   display: inline-block;
   margin-left: 1vw;
-  font-size: 4vw;
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 700;
   letter-spacing: 8px;
   text-transform: uppercase;
   -webkit-transition: opacity 400ms ease-in-out;
   transition: opacity 400ms ease-in-out;
-}
-
-.header__mobile-menu__links a {
-  position: relative;
-  font-size: 0.875rem;
-  color: #f7eede;
-  -webkit-transition: color 300ms ease-in-out;
-  transition: color 300ms ease-in-out;
-}
-
-.header__mobile-menu__links a:not(:last-child) {
-  margin-right: 32px;
-}
-
-.header__mobile-menu__links a::before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 5px;
-  left: 0;
-  right: 0;
-  bottom: -30px;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-
-.header__mobile-menu__links a:hover {
-  color: #f7eede;
-  opacity: 0.75;
-}
-
-.header__mobile-menu__links a:hover::before {
-  opacity: 1;
 }
 
 .header__mobile-menu__cta {
@@ -558,8 +572,81 @@ button:hover,
   margin-bottom: 40px;
 }
 
+.about .main-heading hr {
+  float: left;
+}
+
+.about .about-divs {
+  min-height: 60vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .container-about-me {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.about .left-about-me {
+  width: 40%;
+  height: 600px;
+}
+
+.about .right-about-me {
+  width: 70%;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -30%;
+}
+
+.about .container-skills {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: -20%;
+  margin-left: 15%;
+}
+
 .about .primary-div {
-  width: 35%;
+  width: 100%;
   height: 500px;
   border-radius: 15px;
   padding: 10px 20px;
@@ -571,18 +658,10 @@ button:hover,
   color: #f7eede;
 }
 
-.about .photo-div {
-  margin-top: -475px;
-  width: 60%;
-}
-
-.about .photo-background {
-  width: 90%;
-}
-
 .about .secondary-div {
-  width: 35%;
-  min-height: 550px;
+  width: 70%;
+  min-height: 500px;
+  max-width: 400px;
   border-radius: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -598,7 +677,6 @@ button:hover,
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 30px;
-  margin: 450px 25px 25px -400px;
   background-color: #d987d9;
   color: #f7eede;
 }
@@ -606,17 +684,6 @@ button:hover,
 .about .secondary-div ul {
   margin: 10px 0;
   line-height: 40px;
-}
-
-@media only screen and (max-width: 1120px) {
-  .about .primary-div {
-    width: 45%;
-    margin: auto;
-  }
-  .about .secondary-div {
-    width: 65%;
-    margin: auto;
-  }
 }
 
 .projects {
