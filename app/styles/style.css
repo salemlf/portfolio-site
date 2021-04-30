@@ -132,6 +132,7 @@ body .whole-row {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 10px 0px;
+  overflow: clip;
 }
 
 .container h2 {
@@ -150,7 +151,7 @@ body .whole-row {
 button,
 .button {
   padding: 0.875rem 2.1875rem;
-  background: #deab9e;
+  background: #deada0;
   border-radius: 20px;
   border: 0;
   color: white;
@@ -187,7 +188,7 @@ button:hover,
 
 .header__name-logo {
   font-family: "Rock Salt", cursive;
-  color: #deab9e;
+  color: #deada0;
 }
 
 .header__links a {
@@ -544,6 +545,8 @@ button:hover,
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  margin-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .about .name-div {
@@ -559,6 +562,14 @@ button:hover,
 }
 
 .about .person-div {
+  position: absolute;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  top: 45%;
+}
+
+.about .blob-div {
   position: absolute;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -587,6 +598,7 @@ button:hover,
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 .about .container-about-me {
@@ -662,7 +674,7 @@ button:hover,
   width: 70%;
   min-height: 500px;
   max-width: 400px;
-  border-radius: 3px;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,9 +699,54 @@ button:hover,
 }
 
 .projects {
-  border: 1px solid white;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  padding-bottom: 150px;
+}
+
+.projects .heading {
+  position: relative;
+  z-index: 1;
+}
+
+.projects .projects-bg-container {
+  display: initial;
+  position: relative;
+  width: 100%;
+}
+
+.projects .projects-bg {
+  display: initial;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.projects .projects-bg-offwhite-rect {
+  top: -130px;
+  height: 679px;
+  -webkit-clip-path: polygon(100% 0, 100% 83%, 0 100%, 0 17%);
+          clip-path: polygon(100% 0, 100% 83%, 0 100%, 0 17%);
+}
+
+.projects .projects-bg-tannish-rect {
+  top: -53px;
+  height: 533px;
+  -webkit-clip-path: polygon(100% 0, 100% 77%, 0 100%, 0 20%);
+          clip-path: polygon(100% 0, 100% 77%, 0 100%, 0 20%);
+}
+
+.projects .projects-content {
   width: 90%;
   margin: 0 auto;
+  border: 1px solid white;
+  position: relative;
+  z-index: 2;
+}
+
+.projects .projects-content .secondary-div p {
+  color: black;
 }
 
 .hobbies {
