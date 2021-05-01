@@ -101,7 +101,7 @@ body li {
 }
 
 body hr {
-  width: 50%;
+  width: 50vw;
   border: 1px solid #e3ce63;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -702,12 +702,17 @@ button:hover,
   width: 100%;
   margin: 0 auto;
   border: 1px solid red;
-  padding-bottom: 150px;
+  padding-bottom: 400px;
 }
 
 .projects .heading {
   position: relative;
   z-index: 1;
+}
+
+.projects .projects-content,
+.projects .heading {
+  margin-top: 200px;
 }
 
 .projects .projects-bg-container {
@@ -725,16 +730,16 @@ button:hover,
 
 .projects .projects-bg-offwhite-rect {
   top: -130px;
-  height: 879px;
-  -webkit-clip-path: polygon(100% 0, 100% 83%, 0 100%, 0 17%);
-          clip-path: polygon(100% 0, 100% 83%, 0 100%, 0 17%);
+  height: 2379px;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+          clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
 }
 
 .projects .projects-bg-tannish-rect {
   top: -53px;
-  height: 733px;
-  -webkit-clip-path: polygon(100% 0, 100% 77%, 0 100%, 0 20%);
-          clip-path: polygon(100% 0, 100% 77%, 0 100%, 0 20%);
+  height: 2233px;
+  -webkit-clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
+          clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
 }
 
 .projects .projects-content {
@@ -764,6 +769,11 @@ button:hover,
   background-image: url("/app/images/project-3-placeholder.jpg");
 }
 
+.projects .projects-content .project-2-info .technologies {
+  margin-left: initial;
+  margin-right: -75px;
+}
+
 .projects .project-info {
   display: -ms-grid;
   display: grid;
@@ -772,6 +782,10 @@ button:hover,
 .projects .project-info h3,
 .projects .project-info p {
   color: black;
+}
+
+.projects .project-info h3 {
+  text-align: center;
 }
 
 .projects .project-info .project-info-div {
@@ -793,6 +807,7 @@ button:hover,
 }
 
 .projects .project-info .info-div-2 {
+  position: relative;
   background-color: #d987d9;
   margin-right: -75px;
 }
@@ -808,6 +823,20 @@ button:hover,
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  margin-left: -75px;
+}
+
+.projects .project-info .project-links {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.projects .project-info .project-links img {
+  width: 60px;
+}
+
+.projects .project-info .project-links .link-icon {
+  margin: -5px 0;
 }
 
 .projects .project-pic {
@@ -815,6 +844,15 @@ button:hover,
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.projects .project-1-info .project-links,
+.projects .project-3-info .project-links {
+  margin-left: -75px;
+}
+
+.projects .project-2-info .project-links {
+  margin-right: -75px;
 }
 
 .hobbies {
