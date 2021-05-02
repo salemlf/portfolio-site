@@ -636,6 +636,7 @@ button:hover,
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: -5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -805,10 +806,24 @@ button:hover,
 
 .projects {
   width: 100%;
+  height: 2820px;
   margin: 0 auto;
   border: 1px solid red;
-  padding-bottom: 400px;
+  padding-bottom: 200px;
+  padding-top: 100px;
   margin-top: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.projects .projects-content,
+.projects .heading {
+  position: relative;
+  z-index: 2;
+}
+
+.projects .heading {
+  margin-top: 75px;
 }
 
 .projects .projects-bg-container {
@@ -843,6 +858,7 @@ button:hover,
   display: grid;
   width: 90%;
   margin: 0 auto;
+  margin-top: -471px;
   border: 1px solid white;
   position: relative;
   z-index: 2;
@@ -949,6 +965,33 @@ button:hover,
 
 .projects .project-2-info .project-links {
   margin-right: -75px;
+}
+
+.projects::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: url("/app/images/projects-offwhite-bg.svg") center no-repeat;
+  background-size: 100% 100%;
+  z-index: 0;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+          clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+}
+
+.projects::before {
+  content: "";
+  position: absolute;
+  bottom: 130px;
+  height: 90%;
+  width: 100%;
+  background: url("/app/images/projects-tannish-bg.svg") center no-repeat;
+  background-size: 100% 100%;
+  z-index: 0;
+  -webkit-clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
+          clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
+  z-index: 2;
 }
 
 .hobbies {
