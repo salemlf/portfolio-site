@@ -144,10 +144,12 @@ body .whole-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -16vw;
+  top: -20vw;
   position: relative;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  min-width: 250px;
+  max-width: 1000px;
 }
 
 .container .name-div .name-background {
@@ -252,6 +254,22 @@ button:hover,
 @media (min-width: 64em) {
   .hide-for-desktop {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .container .name-div {
+    top: -185px;
+  }
+  .container .name-div::after {
+    top: 20vh;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 90%;
+    width: 100vh;
+    background: url("/app/images/person-on-computer.svg") bottom center no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -625,7 +643,6 @@ button:hover,
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  margin-top: 50px;
   padding-bottom: 200px;
 }
 
@@ -791,12 +808,7 @@ button:hover,
   margin: 0 auto;
   border: 1px solid red;
   padding-bottom: 400px;
-}
-
-.projects .heading {
-  position: relative;
-  top: 136vw;
-  z-index: 1;
+  margin-top: 100px;
 }
 
 .projects .projects-bg-container {

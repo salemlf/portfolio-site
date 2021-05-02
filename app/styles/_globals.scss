@@ -127,10 +127,13 @@ body {
   .name-div {
     //TODO: temporary fixes, change later
     display: flex;
-    margin-top: -16vw;
+    // margin-top: -16vw;
+    top: -20vw;
     position: relative;
     // margin-bottom: 10%;
     flex-basis: 100%;
+    min-width: 250px;
+    max-width: 1000px;
 
     .name-background {
       width: 90%;
@@ -251,5 +254,24 @@ button,
 .hide-for-desktop {
   @include breakpoint-up(large) {
     display: none;
+  }
+}
+
+//for backgrounds
+@media only screen and (min-width: 1001px) {
+  .container .name-div {
+    top: -185px;
+  }
+  .container .name-div::after {
+    top: 20vh;
+    // width: 69vh;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 90%;
+    width: 100vh;
+    background: url("/app/images/person-on-computer.svg") bottom center
+      no-repeat;
+    background-size: 100%;
   }
 }
