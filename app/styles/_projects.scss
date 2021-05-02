@@ -12,12 +12,13 @@
 
   .heading {
     position: relative;
+    top: 136vw;
     z-index: 1;
   }
 
   .projects-content,
   .heading {
-    margin-top: 200px;
+    // margin-top: 200px;
   }
 
   .projects-bg-container {
@@ -47,6 +48,8 @@
   }
 
   .projects-content {
+    // position: relative;
+    // top: 144vw;
     display: grid;
     width: 90%;
     margin: 0 auto;

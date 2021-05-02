@@ -43,6 +43,10 @@ body {
       justify-content: space-between;
     }
 
+    &-jc-sa {
+      justify-content: space-around;
+    }
+
     &-jc-c {
       justify-content: center;
     }
@@ -120,8 +124,96 @@ body {
   margin: 10px 0px;
   overflow: clip;
 
+  .name-div {
+    //TODO: temporary fixes, change later
+    display: flex;
+    margin-top: -16vw;
+    position: relative;
+    // margin-bottom: 10%;
+    flex-basis: 100%;
+
+    .name-background {
+      width: 90%;
+    }
+  }
+
+  .name-div::after {
+    content: "";
+    position: absolute;
+    top: 35vw;
+    left: 0;
+    height: 69vw;
+    width: 90%;
+    background: url("/app/images/person-on-computer.svg") bottom center
+      no-repeat;
+    background-size: 100%;
+  }
+
   h2 {
     text-transform: uppercase;
+  }
+
+  // .bg-container {
+  //   max-height: 10000px;
+  // }
+
+  //TODO: set max width
+  .bg-container {
+    width: 100%;
+    position: relative;
+    // max-width: 1000px;
+    display: flex;
+
+    // .about-me-bg {
+    // position: absolute;
+    // width: 100%;
+    // padding: 0;
+    // padding-bottom: 56%;
+    // background-image: url("/app/images/about-me-background-blob.svg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // transform: scale(5.5) rotate(200deg);
+    // left: -55vw;
+    // top: 126vw;
+    // overflow: clip;
+    // }
+
+    .person-div {
+      position: absolute;
+      flex-basis: 100%;
+      width: 100%;
+      top: -62vw;
+      left: 3vw;
+    }
+
+    .blob-div {
+      position: absolute;
+      flex-basis: 100%;
+      width: 100%;
+      top: 54vw;
+      left: -44vw;
+      transform: scale(5.5) rotate(200deg);
+    }
+  }
+
+  .projects-bg {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    overflow: clip;
+  }
+
+  .projects-bg-offwhite-rect {
+    //TODO: change height and top values
+    top: 173vw;
+    height: 245vh;
+    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+  }
+
+  .projects-bg-tannish-rect {
+    top: 187vw;
+    height: 235vh;
+    clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
   }
 }
 

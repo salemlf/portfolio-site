@@ -43,6 +43,11 @@ body .flex-jc-sb {
           justify-content: space-between;
 }
 
+body .flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 body .flex-jc-c {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -135,8 +140,82 @@ body .whole-row {
   overflow: clip;
 }
 
+.container .name-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -16vw;
+  position: relative;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.container .name-div .name-background {
+  width: 90%;
+}
+
+.container .name-div::after {
+  content: "";
+  position: absolute;
+  top: 35vw;
+  left: 0;
+  height: 69vw;
+  width: 90%;
+  background: url("/app/images/person-on-computer.svg") bottom center no-repeat;
+  background-size: 100%;
+}
+
 .container h2 {
   text-transform: uppercase;
+}
+
+.container .bg-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .bg-container .person-div {
+  position: absolute;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  top: -62vw;
+  left: 3vw;
+}
+
+.container .bg-container .blob-div {
+  position: absolute;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  top: 54vw;
+  left: -44vw;
+  -webkit-transform: scale(5.5) rotate(200deg);
+          transform: scale(5.5) rotate(200deg);
+}
+
+.container .projects-bg {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  overflow: clip;
+}
+
+.container .projects-bg-offwhite-rect {
+  top: 173vw;
+  height: 245vh;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+          clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+}
+
+.container .projects-bg-tannish-rect {
+  top: 187vw;
+  height: 235vh;
+  -webkit-clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
+          clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
 }
 
 @media only screen and (max-width: 1120px) {
@@ -535,6 +614,7 @@ button:hover,
 
 .about {
   border: 1px solid white;
+  position: relative;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -545,16 +625,8 @@ button:hover,
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  margin-bottom: 150px;
-  padding-bottom: 50px;
-}
-
-.about .name-div {
-  margin-top: -20%;
-  position: relative;
-  margin-bottom: 10%;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  margin-top: 50px;
+  padding-bottom: 200px;
 }
 
 .about .name-background {
@@ -599,6 +671,7 @@ button:hover,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
+  z-index: 1;
 }
 
 .about .container-about-me {
@@ -698,6 +771,21 @@ button:hover,
   line-height: 40px;
 }
 
+.about::after {
+  content: "";
+  position: absolute;
+  top: 1vh;
+  right: 26vw;
+  height: 100%;
+  width: 108vh;
+  background: url("/app/images/about-me-background-blob.svg") center no-repeat;
+  background-size: 100%;
+  z-index: 0;
+  -webkit-transform: scale(5.3) rotate(230deg);
+          transform: scale(5.3) rotate(230deg);
+  max-width: 1000px;
+}
+
 .projects {
   width: 100%;
   margin: 0 auto;
@@ -707,12 +795,8 @@ button:hover,
 
 .projects .heading {
   position: relative;
+  top: 136vw;
   z-index: 1;
-}
-
-.projects .projects-content,
-.projects .heading {
-  margin-top: 200px;
 }
 
 .projects .projects-bg-container {
