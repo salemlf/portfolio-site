@@ -1,4 +1,5 @@
 {
     "workbench.editor.enablePreview": false,
-    "liveServer.settings.CustomBrowser": "chrome"
+    "liveServer.settings.CustomBrowser": "chrome",
+    "svg.preview.background": "transparent"
 }
