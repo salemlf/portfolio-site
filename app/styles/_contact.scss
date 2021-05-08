@@ -1,8 +1,33 @@
 .contact {
   //temporary border for identifying sections
   border: 1px solid white;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding: 50px 0px;
   margin: 100px auto;
+  position: relative;
+  z-index: 1;
+
+  .contact-me-content {
+    width: 90%;
+    position: relative;
+    z-index: 3;
+    border: 1px solid red;
+
+    .heading {
+      text-align: center;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    width: 100%;
+    background: url("/app/images/contact-me-background-blob.svg") center
+      no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+  }
 }
