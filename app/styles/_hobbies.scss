@@ -1,38 +1,86 @@
 .hobbies {
-  margin-top: 100px;
   position: relative;
   z-index: 1;
+
+  .hobbies-clip-path {
+  }
+
+  .hobbies-svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .hobbies-svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   .hobbies-bg {
     position: absolute;
     width: 100%;
-    height: 1000px;
+    height: 2000px;
     top: 400px;
+
+    // .bottom-bg {
+    //   transform: rotate(180deg) scaleX(-1);
+
+    //   .bottom-bg-img {
+    //     // transform: rotate(180deg) scaleX(-1);
+    //   }
+    // }
+
+    // .clipped-img {
+    //   // z-index: 2;
+    //   // position: relative;
+    //   // margin-bottom: -20px;
+    //   -webkit-clip-path: url(#svgClip);
+    //   clip-path: url(#svgClip);
+    // }
+
+    //TODO: create div covered with bg image, then use clip path on it
   }
 
   .hobbies-content {
     //temporary border for identifying sections
     border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
     padding: 50px 0px;
     position: relative;
+    top: -310px;
     z-index: 3;
+
+    .heading {
+      text-align: left;
+      flex-basis: 100%;
+    }
+
+    hr {
+      float: left;
+    }
+
+    .primary-div {
+      flex-basis: 100%;
+    }
   }
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 130px;
-  //   height: 100%;
-  //   width: 100%;
-  //   // background: url("/app/images/gradient-background.png") center no-repeat;
-  //   // background: url("/app/images/wave.svg") center no-repeat;
-  //   // background: url("/app/images/wave.svg") center no-repeat;
-  //   background-size: 100% 100%;
-  //   z-index: 0;
-  //   // clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 11%);
-  //   // clip-path: url(#svgPath);
-  //   z-index: 2;
-  // }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    height: 1050px;
+    width: 100%;
+    background: url("/app/images/GradientWave.png") center no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+    z-index: 2;
+  }
 }
