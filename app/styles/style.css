@@ -1048,7 +1048,7 @@ button:hover,
   margin: 0 auto;
   padding: 50px 0px;
   position: relative;
-  top: -310px;
+  top: -10px;
   z-index: 3;
 }
 
@@ -1068,9 +1068,65 @@ button:hover,
           justify-content: flex-end;
 }
 
-.hobbies .hobbies-content .primary-div {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+.hobbies .hobbies-content .frame-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hobbies .hobbies-content .gardening-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 600px;
+  max-height: 100%;
+  width: 50%;
+  min-width: 400px;
+  background: url("/app/images/green-hobbies-frame.svg") center no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+.hobbies .hobbies-content .gardening-div .gardening-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  top: 225px;
+}
+
+.hobbies .hobbies-content .cooking-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 600px;
+  max-height: 100%;
+  width: 50%;
+  min-width: 400px;
+  background: url("/app/images/yellow-hobbies-frame.svg") center no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+.hobbies .hobbies-content .cooking-div .cooking-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  top: 225px;
 }
 
 .hobbies::before {
