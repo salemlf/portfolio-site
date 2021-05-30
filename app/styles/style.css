@@ -101,12 +101,26 @@ body p {
   color: #f7eede;
 }
 
+body ul.no-bullet {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 25px;
+  margin: 0;
+}
+
+body li.arrow {
+  background: url("/app/images/Right Arrow.svg") no-repeat left center;
+  height: 56px;
+  padding-left: 60px;
+  padding-top: 8px;
+}
+
 body li {
   color: #f7eede;
 }
 
 body hr {
-  width: 50vw;
+  width: 50%;
   min-width: 300px;
   border: 1px solid #e3ce63;
   -ms-flex-item-align: end;
@@ -849,6 +863,10 @@ button:hover,
   z-index: 2;
 }
 
+.projects hr {
+  width: 100%;
+}
+
 .projects .projects-content,
 .projects .heading {
   position: relative;
@@ -1180,6 +1198,12 @@ button:hover,
   margin: 100px auto;
   position: relative;
   z-index: 1;
+}
+
+.contact .heading-with-icon {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact .contact-me-content {

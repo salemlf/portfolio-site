@@ -92,12 +92,26 @@ body {
     color: $offWhite;
   }
 
+  ul.no-bullet {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 25px;
+    margin: 0;
+  }
+
+  li.arrow {
+    background: url("/app/images/Right\ Arrow.svg") no-repeat left center;
+    height: 56px;
+    padding-left: 60px;
+    padding-top: 8px;
+  }
+
   li {
     color: $offWhite;
   }
 
   hr {
-    width: 50vw;
+    width: 50%;
     min-width: 300px;
     border: 1px solid $yellow;
     align-self: flex-end;
