@@ -12,6 +12,10 @@
   justify-items: center;
   padding-bottom: 200px;
 
+  .about-heading {
+    color: $mediumBlue;
+  }
+
   .name-background {
     width: 90%;
   }
@@ -143,9 +147,9 @@
     background-color: $yellow;
     color: $offWhite;
 
-    h3 {
-      color: $offWhite;
-    }
+    // h3 {
+    //   color: $offWhite;
+    // }
   }
 
   .photo-div {

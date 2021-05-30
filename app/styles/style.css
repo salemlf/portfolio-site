@@ -685,6 +685,10 @@ button:hover,
   padding-bottom: 200px;
 }
 
+.about .about-heading {
+  color: #1c2e4a;
+}
+
 .about .name-background {
   width: 90%;
 }
@@ -801,10 +805,6 @@ button:hover,
   border-radius: 15px;
   padding: 10px 20px;
   background-color: #e3ce63;
-  color: #f7eede;
-}
-
-.about .bio-div h3 {
   color: #f7eede;
 }
 
