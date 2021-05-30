@@ -883,10 +883,12 @@
         3D div
         <!-- fallback image in CSS -->
       </object>
-     </div>
+    </div>
     <section class="about flex flex-wrap">
       <div class="main-heading">
-        <h2>About Me</h2>
+        <div class="heading-with-icon">
+          <h2>About Me</h2><img class="heading-icon" src="/app/images/Info Squared.svg" alt="An icon with an 'i' to symbolize information">
+        </div>
         <hr />
       </div>
       <div class="about-divs">
@@ -904,8 +906,10 @@
           </div>
           <!-- TODO: make photo background bg image instead of inside container-->
           <div class="about-me-img-container">
-            <div class="about-me-img-div-bg"><img class="bg-for-img" src="/app/images/photo-background.svg" alt="dashed rectangle background"></div>
-            <div class="about-me-img-div"><img class="img-me" src="https://pbs.twimg.com/profile_images/1299523263035371523/_Dqiol7f.jpg" alt="picture of me" ></div>
+            <div class="about-me-img-div-bg"><img class="bg-for-img" src="/app/images/photo-background.svg"
+                alt="dashed rectangle background"></div>
+            <div class="about-me-img-div"><img class="img-me"
+                src="https://pbs.twimg.com/profile_images/1299523263035371523/_Dqiol7f.jpg" alt="picture of me"></div>
           </div>
         </div>
         <div class="container-skills">
@@ -928,7 +932,9 @@
     </section>
     <section class="projects flex flex-jc-sb flex-ai-c flex-wrap flex-fd-row">
       <div class="heading">
-        <h2>Projects</h2>
+        <div class="heading-with-icon">
+          <h2>Projects and <br/>Tutorials</h2><img class="heading-icon" src="/app/images/Code Icon.svg" alt="An icon with an a closing html tag to symbolize programming/projects">
+        </div>
         <hr />
       </div>
       <div class="projects-content">
@@ -943,7 +949,9 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="technologies">
-            <p>HTML</p><p>CSS</p><p>Markdown</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Markdown</p>
           </div>
           <div class="project-links">
             <!-- TODO: turn into links -->
@@ -960,7 +968,9 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="technologies">
-            <p>Node.js</p><p>React</p><p>HTML</p>
+            <p>Node.js</p>
+            <p>React</p>
+            <p>HTML</p>
           </div>
           <div class="project-links">
             <!-- TODO: turn into links -->
@@ -979,7 +989,9 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="technologies">
-            <p>HTML</p><p>CSS</p><p>Markdown</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Markdown</p>
           </div>
           <div class="project-links">
             <!-- TODO: turn into links -->
@@ -990,48 +1002,53 @@
     </section>
     <section class="hobbies container flex flex-jc-sa flex-ai-c flex-wrap flex-fd-row">
       <div class="hobbies-content">
-      <div class="heading"><h2>Hobbies</h2></div>
-      <hr />
-
-      <div class="frame-container">
-        <div class="gardening-div">
-          <div class="gardening-content">
-            <h4>Gardening</h4>
-            <p>More info here</p>
+        <div class="heading">
+          <div class="heading-with-icon">
+            <h2>Hobbies</h2><img class="heading-icon" src="/app/images/Theme Park.svg" alt="An icon with a roller coaster and ferris wheel to symbolize hobbies">
           </div>
         </div>
-        <div class="cooking-div">
-          <div class="cooking-content">
-            <h4>Cooking</h4>
-            <p>More info here</p>
+        <hr />
+        <div class="frame-container">
+          <div class="gardening-div">
+            <div class="gardening-content">
+              <h4>Gardening</h4>
+              <p>More info here</p>
+            </div>
+          </div>
+          <div class="cooking-div">
+            <div class="cooking-content">
+              <h4>Cooking</h4>
+              <p>More info here</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
     <section class="contact">
       <div class="contact-me-content">
-      <div class="primary-div">
-        <div class="heading">
-          <h2>Contact Me</h2>
+        <div class="primary-div">
+          <div class="heading">
+            <div class="heading-with-icon">
+              <h2>Contact Me</h2><img class="heading-icon" src="/app/images/Speech Bubble.svg" alt="A speech bubble icon to symbolize messaging/getting in contact with me">
+            </div>
+          </div>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
         </div>
-        <hr />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
       </div>
-    </div>
     </section>
-    </div>
-    <footer>
-      <!-- Icon and image attribution
+  </div>
+  <footer>
+    <!-- Icon and image attribution
         brightness by Ravindra Kalkani from the Noun Project
         Moon by Royyan Wijaya from the Noun Project
         -->
-    </footer>
+  </footer>
   </div>
   <script src="app/js/script.js"></script>
   <!-- Below is temporary, for testing -->

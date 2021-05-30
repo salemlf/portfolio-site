@@ -98,8 +98,22 @@ body {
 
   hr {
     width: 50vw;
+    min-width: 300px;
     border: 1px solid $yellow;
     align-self: flex-end;
+  }
+
+  .heading-with-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+  }
+
+  .heading-icon {
+    margin-left: 15px;
+    width: 78px;
+    height: 78px;
+    margin-bottom: 10px;
   }
 
   //TODO: delete?

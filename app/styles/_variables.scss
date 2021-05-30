@@ -16,19 +16,18 @@ $veryLightGrey: hsl(0, 0%, 98%);
 // $lightGreyishBlue: #f3f4f6;
 
 //new dark mode colors
-//TODO: convert to HSL
-$deepDarkBlue: #111633;
-$mediumBlue: #1c2e4a;
-$purple: #7b5b92;
-$pink: #d987d9;
-$lightGreen: #55d4ab;
-$yellow: #e3ce63;
+$deepDarkBlue: hsl(231, 50%, 13%);
+$mediumBlue: hsl(217, 45%, 20%);
+$purple: hsl(275, 23%, 46%);
+$pink: hsl(300, 52%, 69%);
+$lightGreen: hsl(161, 60%, 58%);
+$yellow: hsl(50, 70%, 64%);
 $tannish: hsl(13, 48%, 75%);
 $offWhite: hsl(38, 61%, 92%);
 
 //hover colors
-$mediumPurpleishBlueHover: rgba(36, 0, 144, 0.75);
-$lightPurpleishBlueHover: rgba(53, 0, 211, 0.75);
+$mediumPurpleishBlueHover: hsla(255, 100%, 28%, 0.75);
+$lightPurpleishBlueHover: hsla(255, 100%, 41%, 0.75);
 $mobileMenuHover: hsla(275, 38, 61, 0.6);
 
 //fonts

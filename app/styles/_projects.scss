@@ -9,17 +9,6 @@
   margin-top: 100px;
   position: relative;
   z-index: 2;
-  //   max-width: 1200px;
-  //   margin: 0 auto;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-items: center;
-
-  // .heading {
-  //   position: relative;
-  //   top: 136vw;
-  //   z-index: 1;
-  // }
 
   .projects-content,
   .heading {
@@ -31,6 +20,10 @@
     margin: 0 auto;
     margin-top: 75px;
     text-align: center;
+
+    h2 {
+      color: $mediumBlue;
+    }
   }
 
   .projects-bg-container {
