@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Public Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
   line-height: 1.3;
   font-size: 1.125rem;
   font-weight: 300;
@@ -90,11 +90,15 @@ body h2 {
       align-self: flex-start;
   margin-left: 20px;
   font-size: 40px;
+  font-family: "Squada One", cursive;
+  letter-spacing: 4px;
 }
 
 body h3 {
   color: #e3ce63;
   font-size: 32px;
+  font-family: "Squada One", cursive;
+  font-weight: 300;
 }
 
 body p {
@@ -112,7 +116,21 @@ body li.arrow {
   background: url("/app/images/Right Arrow.svg") no-repeat left center;
   height: 56px;
   padding-left: 60px;
-  padding-top: 8px;
+  padding-top: 6px;
+  will-change: transform;
+  -webkit-transition: all 450ms;
+  transition: all 450ms;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+body li.arrow:hover {
+  -webkit-transition: all 125ms;
+  transition: all 125ms;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+  margin-left: 10px;
+  padding-left: 50px;
 }
 
 body li {
@@ -682,7 +700,6 @@ button:hover,
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  padding-bottom: 200px;
 }
 
 .about .about-heading {
@@ -1107,7 +1124,7 @@ button:hover,
   margin: 0 auto;
   padding: 50px 0px;
   position: relative;
-  top: -10px;
+  top: 65px;
   z-index: 3;
 }
 
