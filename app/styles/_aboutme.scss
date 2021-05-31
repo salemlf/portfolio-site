@@ -122,16 +122,17 @@
       height: 682px;
       z-index: 2;
       position: relative;
-      bottom: 52px;
+      top: 10px;
+      right: 18px;
     }
 
     .img-me {
       width: 382px;
       height: 482px;
-      right: 415px;
-      z-index: 3;
+      z-index: 4;
       position: relative;
-      bottom: 90px;
+      top: -26px;
+      right: 334px;
     }
   }
 
@@ -148,7 +149,7 @@
   .bio-div {
     width: 90%;
     max-width: 450px;
-    height: 500px;
+    height: 550px;
     border-radius: 15px;
     padding: 10px 20px;
     background-color: $yellow;
@@ -158,6 +159,9 @@
   //TODO: make this one relative to to primary div?
   .secondary-div {
     width: 70%;
+    position: relative;
+    z-index: 3;
+    bottom: 196px;
     min-height: 500px;
     max-width: 400px;
     border-radius: 5px;
