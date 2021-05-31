@@ -673,6 +673,7 @@ button:hover,
   text-transform: uppercase;
   -webkit-transition: opacity 400ms ease-in-out;
   transition: opacity 400ms ease-in-out;
+  font-family: "Squada One", cursive;
 }
 
 .header__mobile-menu__cta {
