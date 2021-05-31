@@ -14,6 +14,11 @@
 
   .about-heading {
     color: $mediumBlue;
+    margin-bottom: 0px;
+  }
+
+  .bio-div .squiggly-underline {
+    width: 56px;
   }
 
   .name-background {
@@ -63,6 +68,10 @@
     // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-columns: minmax(350px, 1fr);
     grid-gap: 1rem;
+
+    // .squiggly-underline {
+    //   margin-top: -30px;
+    // }
   }
 
   .about-me-bio {
@@ -142,39 +151,31 @@
     height: 500px;
     border-radius: 15px;
     padding: 10px 20px;
-    //! Uncomment later if needed, trying to only use flexbox
-    //margin: -400px 25px 25px 200px;
     background-color: $yellow;
     color: $offWhite;
-
-    // h3 {
-    //   color: $offWhite;
-    // }
-  }
-
-  .photo-div {
-  }
-
-  .photo-frame {
   }
 
   //TODO: make this one relative to to primary div?
   .secondary-div {
-    // width: 300px;
-    // min-height: 550px;
     width: 70%;
     min-height: 500px;
     max-width: 400px;
     border-radius: 5px;
     display: flex;
-    //TODO: aligns text as center, probably change
-    //TODO: move headers left in container
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
     padding: 30px;
     background-color: $pink;
     color: $offWhite;
+
+    .skills-squiqqly {
+      width: 90px;
+    }
+
+    .work-squiggly {
+      width: 206px;
+    }
 
     ul {
       margin: 10px 0;

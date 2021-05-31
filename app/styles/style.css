@@ -687,6 +687,11 @@ button:hover,
 
 .about .about-heading {
   color: #1c2e4a;
+  margin-bottom: 0px;
+}
+
+.about .bio-div .squiggly-underline {
+  width: 56px;
 }
 
 .about .name-background {
@@ -829,6 +834,14 @@ button:hover,
   padding: 30px;
   background-color: #d987d9;
   color: #f7eede;
+}
+
+.about .secondary-div .skills-squiqqly {
+  width: 90px;
+}
+
+.about .secondary-div .work-squiggly {
+  width: 206px;
 }
 
 .about .secondary-div ul {
