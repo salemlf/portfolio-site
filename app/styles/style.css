@@ -11,6 +11,10 @@ html {
           box-sizing: inherit;
 }
 
+.lock-scroll {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -334,6 +338,12 @@ button:hover,
   background-color: #1c2e4a;
 }
 
+.header .hamburger-btn {
+  position: absolute;
+  right: 3%;
+  z-index: 10;
+}
+
 .header__logo img {
   width: 8.8125rem;
   height: 1.375rem;
@@ -385,13 +395,24 @@ button:hover,
           box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
 }
 
+.header .desktop-version .nav-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3%;
+}
+
 .header .light-mode-btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.2rem;
+  padding: 0.3rem;
   background: #e3ce63;
   border-radius: 10px;
+  margin-right: 10%;
 }
 
 .header .light-mode-btn img {
@@ -489,6 +510,8 @@ button:hover,
   margin: 0 15% 0 7%;
   -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  max-height: 60px;
+  max-width: 60px;
 }
 
 .header__mobile-menu .btn-dark-light-mode .sun-icon {
@@ -501,7 +524,9 @@ button:hover,
 
 .header__mobile-menu .btn-mobile-resume {
   border-radius: 5px;
-  font-size: 3vw;
+  font-size: 1.1rem;
+  max-width: 145px;
+  max-height: 60px;
   -webkit-box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
           box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
 }
@@ -533,7 +558,7 @@ button:hover,
       -ms-flex-align: center;
           align-items: center;
   padding: 0px 10px 0px 0px;
-  height: 70vh;
+  height: 65%;
 }
 
 .header__mobile-menu .nav-options .scaling-svg-container {
@@ -589,8 +614,8 @@ button:hover,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: clamp(16px, 11vw, 72px);
-  margin: 2vh 0;
+  height: clamp(16px, 11vw, 60px);
+  margin: 14px 0;
   padding: 0 0;
   -webkit-box-align: center;
       -ms-flex-align: center;

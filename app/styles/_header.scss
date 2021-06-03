@@ -12,6 +12,12 @@
     }
   }
 
+  .hamburger-btn {
+    position: absolute;
+    right: 3%;
+    z-index: 10;
+  }
+
   &__logo {
     img {
       //TODO: change when logo is added
@@ -65,13 +71,20 @@
       border-radius: 5px;
       box-shadow: inset 2px 5px 8px hsla(0deg, 0%, 0%, 0.25);
     }
+
+    .nav-btns {
+      display: flex;
+      align-items: center;
+      margin-right: 3%;
+    }
   }
 
   .light-mode-btn {
     width: fit-content;
-    padding: 0.2rem;
+    padding: 0.3rem;
     background: $yellow;
     border-radius: 10px;
+    margin-right: 10%;
 
     img {
       width: 50px;
@@ -167,6 +180,8 @@
       padding: 0.25rem;
       margin: 0 15% 0 7%;
       box-shadow: 10px 10px hsla(0deg, 0%, 0%, 0.1);
+      max-height: 60px;
+      max-width: 60px;
 
       .sun-icon {
         width: 7vw;
@@ -179,7 +194,9 @@
 
     .btn-mobile-resume {
       border-radius: 5px;
-      font-size: 3vw;
+      font-size: 1.1rem;
+      max-width: 145px;
+      max-height: 60px;
       box-shadow: inset 2px 5px 8px hsla(0deg, 0%, 0%, 0.25);
       &:hover {
         opacity: initial;
@@ -209,7 +226,7 @@
       display: flex;
       align-items: center;
       padding: 0px 10px 0px 0px;
-      height: 70vh;
+      height: 65%;
 
       .scaling-svg-container {
         position: relative;
@@ -254,8 +271,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        height: clamp(16px, 11vw, 72px);
-        margin: 2vh 0;
+        height: clamp(16px, 11vw, 60px);
+        margin: 14px 0;
         padding: 0 0;
         align-items: center;
 
